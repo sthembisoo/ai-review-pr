@@ -1,0 +1,18 @@
+echo "# Binaries
+ai-review-pr
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test files
+*.test
+*.out
+
+# Vendor
+vendor/
+
+# IDE
+.vscode/
+.idea/" > .gitignore

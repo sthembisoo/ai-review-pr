@@ -1,0 +1,20 @@
+Goal: Analyze a crash report from Raygun and determine the root cause of the error.
+
+Context:
+- Error: {{.ErrorMessage}}
+
+Steps:
+1. Below is the crash report data from Raygun in JSON format:
+
+{{.CrashDetails}}
+
+2. Analyze the crash report data to understand:
+   - What is the cause of the crash?
+   - The file(s) and line number(s) where the crash occurred
+
+3. Save your complete analysis as a markdown file at: {{.AnalysisFilePath}}
+
+Deliverable:
+- Start with a brief summary of the crash
+- Make it concise and to the point
+- Don't give recommended fixes

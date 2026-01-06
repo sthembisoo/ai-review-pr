@@ -1,0 +1,18 @@
+Goal: Review branch {{.BranchName}} against {{.TargetBranch}} and report any issues.
+
+Steps:
+1. The branch {{.BranchName}} is already checked out.
+2. Here is the diff against {{.TargetBranch}} (full diff plus stats):
+
+{{.Diff}}
+
+3. Review the diff for functional correctness and ensure there are no bugs.
+4. Ensure the code uses the DRY principle.
+5. Summarize findings and open questions.
+6. Save the review as a markdown file at: {{.ReviewFilePath}}
+
+Deliverable:
+- Findings first, ordered by severity, with 'path:line' references.
+- Note any assumptions or questions.
+- End with an easy-to-read summary section.
+- Add a human readable summary of what has changed.
