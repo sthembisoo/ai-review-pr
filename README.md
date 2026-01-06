@@ -73,7 +73,3 @@ ai-review-pr errors --repo /path/to/repo --branch main
 - `--branch, -b` - Branch to checkout before analysis (optional)
 
 **Output:** Creates a `RaygunError.md` file in the repository with the crash analysis.
-
-## License
-
-MIT
